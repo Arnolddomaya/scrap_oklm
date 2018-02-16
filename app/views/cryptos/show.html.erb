@@ -1,0 +1,10 @@
+<h1>Crypto cryptomonaie trouvé !!</h1>
+<%= render "/layouts/flash" %>
+<% unless  @crypto[:price].empty? %>
+  <p>nom  <strong><%=@crypto[:name] %></strong>,  cours : <strong><%= @crypto[:price] %></strong></p>
+
+  <% else %>
+  <p>nom  <%=@crypto[:name] %>,  cours : Non disponible %></p>
+<% end  %>
+
+<%=link_to "Une autre recherche?" %>

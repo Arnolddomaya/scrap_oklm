@@ -34,9 +34,9 @@ class ScrapCryp
 
   def search_crypto
     res = false
-    parse_criptomonies().each do |crypto|
-      if crypto[:name].downcase == @research.downcase
-        res = crypto
+    parse_criptomonies().each do |crypt|
+      if crypt[:name].downcase == @research.downcase
+        res = crypt
       end
     end
     res

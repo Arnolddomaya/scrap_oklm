@@ -1,0 +1,8 @@
+<h1>Recherche le cours d'une cryptomonaie</h1>
+<%= render "/layouts/flash" %>
+
+<%= form_for :crypto, method: :post do |f| %>
+  <%= f.text_field :name, placeholder:"le nom de la crypto " %>
+  <br><br>
+  <%= f.submit value:"Search" %>
+<% end %>
